@@ -1,11 +1,21 @@
-#include <iostream>
-#include "Log.h"
- 
-
+# include <iostream>
+using namespace std;
 
 int main()
 {
-	
-	std::cout << "Hello World" << std::endl;
-	return 0;
+int a = 10;
+int &r = a;
+
+cout << a << endl << r << endl <<endl;
+
+r++;
+
+cout << a << endl;
+cout << r << endl<<endl;
+
+int b = 30;
+r = b;
+
+cout << b << endl << r << endl << a <<endl;
+return 0;
 }
